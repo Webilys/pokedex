@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "pokemon-hollow";
+  src: url(../fonts/pokemon-hollow.ttf);
+}
+
+@font-face {
+  font-family: "pokemon-solid";
+  src: url(../fonts/pokemon-solid.ttf);
+}
+
+@font-face {
+  font-family: "pokemon-classic";
+  src: url(../fonts/pokemon-classic.ttf);
+}
+
+$font1: pokemon-solid, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+$font2: pokemon-hollow, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+$font3: pokemon-classic, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+}
