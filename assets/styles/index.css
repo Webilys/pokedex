@@ -60,39 +60,79 @@ h6 {
 }
 
 header {
-  background: #ffffff;
+  background: #ea4241;
   -webkit-box-shadow: 0 0 10px #000000;
           box-shadow: 0 0 10px #000000;
+  height: 20%;
 }
 header div {
   display: grid;
   grid-template-columns: 30% 70%;
-  padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
   width: 80%;
   margin: 0 auto;
 }
-header div label {
-  font-size: 0.7rem;
+header div div {
+  display: block;
+  padding: 0;
 }
-header div label input {
+header div div label {
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+header div div label input {
   margin: 10px;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid #2b73bb;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
+header div div label input:active, header div div label input:focus {
+  outline: none;
+}
+header div div button {
+  padding: 5px 20px 7px;
+  border-radius: 5px;
+  background: #f8cc41;
+  color: #2b73bb;
+  border: 2px solid #2b73bb;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header div div button:hover {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
 
+main {
+  height: 60%;
+}
 main section {
+  margin: 0 auto;
   width: 80%;
-  margin: 20px auto;
+}
+main section div {
+  margin: 20px;
   padding: 50px 20px;
+  background: #ea4241;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
   border-radius: 20px;
 }
 
 footer {
-  background: #ffffff;
+  background: #ea4241;
   -webkit-box-shadow: 0 0 10px #000000;
           box-shadow: 0 0 10px #000000;
+  height: 20%;
 }
 footer div {
   width: 80%;
@@ -109,6 +149,9 @@ footer div p,
 footer div a {
   font-size: 0.6rem;
   text-decoration: none;
+  color: #ffffff;
+}
+footer div a:hover {
   color: #000000;
 }
 footer div .legalLink {

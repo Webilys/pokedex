@@ -1,6 +1,7 @@
 footer {
-  background: $white;
+  background: $color3;
   box-shadow: 0 0 10px $black;
+  height: 20%;
 
   div {
     width: 80%;
@@ -15,7 +16,13 @@ footer {
     a {
       font-size: 0.6rem;
       text-decoration: none;
-      color: $text;
+      color: $white;
+    }
+
+    a {
+      &:hover {
+        color: $black;
+      }
     }
 
     .legalLink {

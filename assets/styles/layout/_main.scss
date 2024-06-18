@@ -1,9 +1,16 @@
 main {
+  height: 60%;
+
   section {
+    margin: 0 auto;
     width: 80%;
-    margin: 20px auto;
-    padding: 50px 20px;
-    // box-shadow: 0 0 10px $black;
-    border-radius: 20px;
+
+    div {
+      margin: 20px;
+      padding: 50px 20px;
+      background: $color3;
+      box-shadow: 0 0 10px $black;
+      border-radius: 20px;
+    }
   }
 }
