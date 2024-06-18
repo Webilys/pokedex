@@ -1,7 +1,26 @@
 main {
   text-align: left;
-  // overflow: hidden;
-  section {
+
+  #bienvenue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px 0;
+    background: $color3;
+    box-shadow: 0 0 10px $black;
+    border-radius: 20px;
+    overflow-y: hidden;
+
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
+
+  .fichePokemon {
     display: grid;
     grid-template-columns: 20% 80%;
     height: 65vh;
@@ -20,6 +39,7 @@ main {
 
       img {
         width: 50%;
+        filter: drop-shadow(0 0 5px $blackShadow);
       }
 
       &:first-child {
@@ -42,15 +62,21 @@ main {
         h2 {
           border: 2px solid $color1;
           box-shadow: 0 0 10px $blackShadow;
+          background: $white;
           text-align: center;
 
           &:first-of-type {
             border: 2px solid $color3;
             box-shadow: none;
+            background: $color3;
           }
         }
         li {
           list-style-position: inside;
+
+          li {
+            margin-left: 30px;
+          }
         }
       }
     }
