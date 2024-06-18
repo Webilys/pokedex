@@ -1,16 +1,58 @@
 main {
-  height: 60%;
-
+  text-align: left;
+  // overflow: hidden;
   section {
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 65vh;
+    margin: 20px auto;
     width: 80%;
+    padding: 20px 0;
+    background: $color3;
+    box-shadow: 0 0 10px $black;
+    border-radius: 20px;
+    overflow-y: hidden;
 
     div {
-      margin: 20px;
-      padding: 50px 20px;
-      background: $color3;
-      box-shadow: 0 0 10px $black;
-      border-radius: 20px;
+      padding: 20px 0;
+      margin: 0 20px;
+      overflow-y: scroll;
+
+      img {
+        width: 50%;
+      }
+
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: none;
+        overflow-y: hidden;
+      }
+
+      &:last-child {
+        padding: 20px;
+
+        h2,
+        h3 {
+          padding: 10px 0;
+          margin: 30px 0;
+        }
+
+        h2 {
+          border: 2px solid $color1;
+          box-shadow: 0 0 10px $blackShadow;
+          text-align: center;
+
+          &:first-of-type {
+            border: 2px solid $color3;
+            box-shadow: none;
+          }
+        }
+        li {
+          list-style-position: inside;
+        }
+      }
     }
   }
 }
