@@ -13,8 +13,11 @@ const searchPokemon = document.getElementById("searchPokemon");
 const searchPokemonUnit = searchPokemon.value;
 const pokemon = searchPokemonUnit;
 
+const pokemonID = document.getElementById(pokemon);
+
 //----------- A CORRIGER -------------------
+
 if (searchPokemonUnit === "pikachu") {
   sectionBienvenue.style.display = "none";
-  searchPokemonUnit.style.display = "grid";
+  pokemonID.style.display = "grid";
 }
