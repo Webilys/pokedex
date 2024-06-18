@@ -20,11 +20,25 @@ $font2: pokemon-hollow, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 $font3: pokemon-classic, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
   "Lucida Sans", Arial, sans-serif;
 
+$color1: #2b73bb;
+$color2: #f8cc41;
+$color3: #ea4241;
+$bg: #cecece;
+$text: #000000;
+$white: #ffffff;
+$black: #000000;
+$blackShadow: rgba(0, 0, 0, 0.25);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $font3;
+}
+
+body {
+  color: $text;
+  text-align: center;
 }
 
 h1,
@@ -34,4 +48,31 @@ h4,
 h5,
 h6 {
   font-family: $font1;
+  color: $color2;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $color1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
 }

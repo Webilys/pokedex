@@ -1,0 +1,26 @@
+footer {
+  background: $white;
+  box-shadow: 0 0 10px $black;
+
+  div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    align-items: center;
+    gap: 20px;
+
+    p,
+    a {
+      font-size: 0.6rem;
+      text-decoration: none;
+      color: $text;
+    }
+
+    .legalLink {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

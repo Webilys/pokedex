@@ -18,6 +18,11 @@
   font-family: pokemon-classic, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+body {
+  color: #000000;
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -25,10 +30,92 @@ h4,
 h5,
 h6 {
   font-family: pokemon-solid, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #f8cc41;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2b73bb;
 }
 
-section {
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+}
+header div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px 0;
   width: 80%;
   margin: 0 auto;
-  padding: 50px 0;
+}
+header div label {
+  font-size: 0.7rem;
+}
+header div label input {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #2b73bb;
+  text-align: center;
+}
+
+main section {
+  width: 80%;
+  margin: 20px auto;
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+
+footer {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+}
+footer div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 10% 50% 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+footer div p,
+footer div a {
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: #000000;
+}
+footer div .legalLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }/*# sourceMappingURL=index.css.map */
