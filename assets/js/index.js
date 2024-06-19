@@ -7,7 +7,6 @@ const fichePokemon = document.querySelector(".fichePokemon");
 
 sectionBienvenue.style.display = "flex";
 sectionFalse.style.display = "none";
-
 fichePokemon.style.display = "none";
 
 function windowLoad() {
@@ -15,7 +14,6 @@ function windowLoad() {
 }
 
 function reset() {
-  sectionBienvenue.style.display = "flex";
   fichePokemon.style.display = "none";
 }
 
