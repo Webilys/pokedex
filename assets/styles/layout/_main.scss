@@ -1,7 +1,8 @@
 main {
   text-align: left;
 
-  #bienvenue {
+  #bienvenue,
+  #sectionFalse {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,8 +21,14 @@ main {
     }
   }
 
+  #sectionFalse {
+    p {
+      text-align: center;
+    }
+  }
+
   .fichePokemon {
-    display: grid;
+    display: none;
     grid-template-columns: 20% 80%;
     height: 65vh;
     margin: 20px auto;

@@ -115,7 +115,8 @@ header div div button:hover {
 main {
   text-align: left;
 }
-main #bienvenue {
+main #bienvenue,
+main #sectionFalse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,11 +140,15 @@ main #bienvenue {
   border-radius: 20px;
   overflow-y: hidden;
 }
-main #bienvenue h2 {
+main #bienvenue h2,
+main #sectionFalse h2 {
   padding-bottom: 20px;
 }
+main #sectionFalse p {
+  text-align: center;
+}
 main .fichePokemon {
-  display: grid;
+  display: none;
   grid-template-columns: 20% 80%;
   height: 65vh;
   margin: 20px auto;

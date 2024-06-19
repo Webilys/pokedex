@@ -22,29 +22,661 @@
         </div>
         <div>
           <label for="searchPokemon">
-            Nom du pokémon ou Numéro du Pokédex national :
+            Nom du pokémon :
             <input
               type="search"
               name="searchPokemon"
               id="searchPokemon"
-              placeholder="ex. : Bulbizarre ou #001"
+              placeholder="Entrez le nom du Pokémon"
             />
           </label>
-          <button type="submit">Rechercher</button>
+          <button type="submit" onclick="research()">Rechercher</button>
         </div>
       </div>
     </header>
     <main>
       <section id="bienvenue">
-        <h2>Bienvennue dans le Podédex</h2>
+        <h2>Bienvenue dans le Podédex</h2>
         <p>Rechercher un Pokémon pour afficher sa fiche</p>
       </section>
+      <section id="sectionFalse">
+        <h2>Désolé</h2>
+        <p>Le Pokédex ne connaît pas ce Pokémon.<br />Essayez à nouveau !</p>
+      </section>
+      <section class="fichePokemon" id="bulbizarre">
+        <div>
+          <img src="./assets/img/bulbizarre.png" alt="Bulbizarre" />
+        </div>
+        <div>
+          <h2>Bulbizarre (#001)</h2>
+          <h2>Informations de Base</h2>
+          <ul>
+            <li>Nom : Bulbizarre</li>
+            <li>Numéro du Pokédex : #001</li>
+            <li>Type : Plante / Poison</li>
+            <li>
+              Description :
+              <ul>
+                <li>
+                  Pokédex Rouge/Bleu : Une étrange graine a été plantée sur son
+                  dos à la naissance. La plante pousse avec ce Pokémon.
+                </li>
+                <li>
+                  Pokédex Épée : Il y a une graine sur son dos depuis sa
+                  naissance. Celle-ci grandit avec lui.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Statistiques de Base</h2>
+          <ul>
+            <li>PV : 45</li>
+            <li>Attaque : 49</li>
+            <li>Défense : 49</li>
+            <li>Attaque Spéciale : 65</li>
+            <li>Défense Spéciale : 65</li>
+            <li>Vitesse : 45</li>
+          </ul>
+          <h2>Évolutions</h2>
+          <ul>
+            <li>Bulbizarre évolue en Herbizarre au niveau 16.</li>
+            <li>Herbizarre évolue en Florizarre au niveau 32.</li>
+          </ul>
+          <h2>Attaques</h2>
+          <h3>Par Niveau :</h3>
+          <ul>
+            <li>Niveau 1 : Charge, Rugissement</li>
+            <li>Niveau 3 : Vampigraine</li>
+            <li>Niveau 6 : Fouet Lianes</li>
+            <li>Niveau 9 : Poudre Dodo</li>
+            <li>Niveau 12 : Tranch'Herbe</li>
+            <li>Niveau 15 : Croissance</li>
+            <li>Niveau 18 : Doux Parfum</li>
+            <li>Niveau 21 : Synthèse</li>
+            <li>Niveau 24 : Bomb-Beurk</li>
+            <li>Niveau 27 : Canon Graine</li>
+            <li>Niveau 30 : Croc Fatal</li>
+            <li>Niveau 33 : Giga-Sangsue</li>
+            <li>Niveau 36 : Danse-Fleur</li>
+          </ul>
+          <h3>Par CT/CS :</h3>
+          <ul>
+            <li>CT10 : Puissance Cachée</li>
+            <li>CT16 : Mur Lumière</li>
+            <li>CT17 : Abri</li>
+            <li>CT20 : Rune Protect</li>
+            <li>CT22 : Lancer de Boue</li>
+            <li>CT27 : Retour</li>
+            <li>CT32 : Reflet</li>
+            <li>CT42 : Façade</li>
+            <li>CT44 : Repos</li>
+            <li>CT45 : Attraction</li>
+            <li>CT48 : Chant Canon</li>
+            <li>CT53 : Éco-Sphère</li>
+            <li>CT75 : Danse-Lames</li>
+            <li>CT86 : Noeud Herbe</li>
+            <li>CT87 : Ronflement</li>
+            <li>CT88 : Éboulement</li>
+            <li>CT90 : Clonage</li>
+            <li>CT92 : Distorsion</li>
+            <li>CT100 : Confidence</li>
+          </ul>
+          <h2>Talents</h2>
+          <ul>
+            <li>
+              Engrais : Augmente la puissance des capacités de type Plante du
+              Pokémon quand ses PV sont bas.
+            </li>
+            <li>
+              Chlorophylle (Talent Caché) : Augmente la Vitesse du Pokémon sous
+              le soleil.
+            </li>
+          </ul>
+          <h2>Faiblesses et Résistances</h2>
+          <h3>Faiblesses :</h3>
+          <ul>
+            <li>Feu (x2)</li>
+            <li>Glace (x2)</li>
+            <li>Vol (x2)</li>
+            <li>Psy (x2)</li>
+          </ul>
+          <h3>Résistances :</h3>
+          <ul>
+            <li>Eau (x0.5)</li>
+            <li>Électrik (x0.5)</li>
+            <li>Plante (x0.25)</li>
+            <li>Combat (x0.5)</li>
+            <li>Fée (x0.5)</li>
+          </ul>
+          <h2>Localisation</h2>
+          <ul>
+            <li>Rouge/Bleu : Starter</li>
+            <li>Jaune : Starter</li>
+            <li>Or/Argent/Cristal : Route 1 (Argent uniquement via échange)</li>
+            <li>Rubis/Saphir/Emeraude : Inaccessible</li>
+            <li>Diamant/Perle/Platine : Inaccessible</li>
+            <li>Noir/Blanc : Jardin de Bulbizarre (Événement)</li>
+            <li>X/Y : Route 22 (Safari des Amis)</li>
+            <li>Épée/Bouclier : DLC : Isolarmure</li>
+          </ul>
+          <h2>Événements et Variantes</h2>
+          <h3>Événements Spéciaux :</h3>
+          <p>
+            Bulbizarre a été distribué dans plusieurs événements spéciaux au fil
+            des ans, souvent avec des capacités ou des movesets exclusifs.
+          </p>
+        </div>
+      </section>
+      <section class="fichePokemon" id="herbizarre">
+        <div>
+          <img src="./assets/img/herbizarre.png" alt="Herbizarre" />
+        </div>
+        <div>
+          <h2>Herbizarre (#002)</h2>
+          <h2>Informations de Base</h2>
+          <ul>
+            <li>Nom : Herbizarre</li>
+            <li>Numéro du Pokédex : #002</li>
+            <li>Type : Plante / Poison</li>
+            <li>
+              Description :
+              <ul>
+                <li>
+                  Pokédex Rouge/Bleu : La plante sur son dos grossit en
+                  absorbant les rayons du soleil. Elle se développe bien en
+                  plein air.
+                </li>
+                <li>
+                  Pokédex Épée : Pour soutenir la plante qui pousse sur son dos,
+                  ses pattes avant sont devenues musclées et robustes.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Statistiques de Base</h2>
+          <ul>
+            <li>PV : 60</li>
+            <li>Attaque : 62</li>
+            <li>Défense : 63</li>
+            <li>Attaque Spéciale : 80</li>
+            <li>Défense Spéciale : 80</li>
+            <li>Vitesse : 60</li>
+          </ul>
+          <h2>Évolutions</h2>
+          <ul>
+            <li>Bulbizarre évolue en Herbizarre au niveau 16.</li>
+            <li>Herbizarre évolue en Florizarre au niveau 32.</li>
+          </ul>
+          <h2>Attaques</h2>
+          <h3>Par Niveau :</h3>
+          <ul>
+            <li>Niveau 1 : Charge, Rugissement, Vampigraine, Fouet Lianes</li>
+            <li>Niveau 9 : Poudre Dodo</li>
+            <li>Niveau 12 : Tranch'Herbe</li>
+            <li>Niveau 15 : Croissance</li>
+            <li>Niveau 20 : Doux Parfum</li>
+            <li>Niveau 25 : Synthèse</li>
+            <li>Niveau 30 : Bomb-Beurk</li>
+            <li>Niveau 35 : Canon Graine</li>
+            <li>Niveau 40 : Croc Fatal</li>
+            <li>Niveau 45 : Giga-Sangsue</li>
+            <li>Niveau 50 : Danse-Fleur</li>
+          </ul>
+          <h3>Par CT/CS :</h3>
+          <ul>
+            <li>CT10 : Puissance Cachée</li>
+            <li>CT16 : Mur Lumière</li>
+            <li>CT17 : Abri</li>
+            <li>CT20 : Rune Protect</li>
+            <li>CT22 : Lance-Soleil</li>
+            <li>CT27 : Retour</li>
+            <li>CT32 : Reflet</li>
+            <li>CT42 : Façade</li>
+            <li>CT44 : Repos</li>
+            <li>CT45 : Attraction</li>
+            <li>CT48 : Chant Canon</li>
+            <li>CT53 : Éco-Sphère</li>
+            <li>CT75 : Danse-Lames</li>
+            <li>CT86 : Noeud Herbe</li>
+            <li>CT87 : Ronflement</li>
+            <li>CT88 : Éboulement</li>
+            <li>CT90 : Clonage</li>
+            <li>CT92 : Distorsion</li>
+            <li>CT100 : Confidence</li>
+          </ul>
+          <h2>Talents</h2>
+          <ul>
+            <li>
+              Engrais : Augmente la puissance des capacités de type Plante du
+              Pokémon quand ses PV sont bas.
+            </li>
+            <li>
+              Chlorophylle (Talent Caché) : Augmente la Vitesse du Pokémon sous
+              le soleil.
+            </li>
+          </ul>
+          <h2>Faiblesses et Résistances</h2>
+          <h3>Faiblesses :</h3>
+          <ul>
+            <li>Feu (x2)</li>
+            <li>Glace (x2)</li>
+            <li>Vol (x2)</li>
+            <li>Psy (x2)</li>
+          </ul>
+          <h3>Résistances :</h3>
+          <ul>
+            <li>Eau (x0.5)</li>
+            <li>Électrik (x0.5)</li>
+            <li>Plante (x0.25)</li>
+            <li>Combat (x0.5)</li>
+            <li>Fée (x0.5)</li>
+          </ul>
+          <h2>Localisation</h2>
+          <ul>
+            <li>Rouge/Bleu : Starter</li>
+            <li>Jaune : Inaccessible</li>
+            <li>Or/Argent/Cristal : Route 1 (Argent uniquement via échange)</li>
+            <li>Rubis/Saphir/Emeraude : Inaccessible</li>
+            <li>Diamant/Perle/Platine : Inaccessible</li>
+            <li>Noir/Blanc : Jardin de Bulbizarre (Événement)</li>
+            <li>X/Y : Route 22 (Safari des Amis)</li>
+            <li>Épée/Bouclier : DLC : Isolarmure</li>
+          </ul>
+          <h2>Événements et Variantes</h2>
+          <h3>Événements Spéciaux :</h3>
+          <p>
+            Herbizarre a été distribué dans plusieurs événements spéciaux au fil
+            des ans, souvent avec des capacités ou des movesets exclusifs.
+          </p>
+        </div>
+      </section>
+      <section class="fichePokemon" id="florizarre">
+        <div>
+          <img src="./assets/img/florizarre.png" alt="Florizarre" />
+        </div>
+        <div>
+          <h2>Florizarre (#003)</h2>
+          <h2>Informations de Base</h2>
+          <ul>
+            <li>Nom : Florizarre</li>
+            <li>Numéro du Pokédex : #003</li>
+            <li>Type : Plante / Poison</li>
+            <li>
+              Description :
+              <ul>
+                <li>
+                  Pokédex Rouge/Bleu : La plante de son dos absorbe les rayons
+                  du soleil et se transforme en énergie. En journée, il reste
+                  immobile pour s'exposer aux rayons du soleil.
+                </li>
+                <li>
+                  Pokédex Épée : La grande fleur sur son dos absorbe l'énergie
+                  solaire et la transforme en énergie. Elle est souvent observée
+                  en train de s'étendre au soleil.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Statistiques de Base</h2>
+          <ul>
+            <li>PV : 80</li>
+            <li>Attaque : 82</li>
+            <li>Défense : 83</li>
+            <li>Attaque Spéciale : 100</li>
+            <li>Défense Spéciale : 100</li>
+            <li>Vitesse : 80</li>
+          </ul>
+          <h2>Évolutions</h2>
+          <ul>
+            <li>Bulbizarre évolue en Herbizarre au niveau 16.</li>
+            <li>Herbizarre évolue en Florizarre au niveau 32.</li>
+          </ul>
+          <h2>Attaques</h2>
+          <h3>Par Niveau :</h3>
+          <ul>
+            <li>Niveau 1 : Charge, Rugissement, Vampigraine, Fouet Lianes</li>
+            <li>Niveau 9 : Poudre Dodo</li>
+            <li>Niveau 12 : Tranch'Herbe</li>
+            <li>Niveau 15 : Croissance</li>
+            <li>Niveau 20 : Doux Parfum</li>
+            <li>Niveau 25 : Synthèse</li>
+            <li>Niveau 30 : Bomb-Beurk</li>
+            <li>Niveau 35 : Canon Graine</li>
+            <li>Niveau 40 : Croc Fatal</li>
+            <li>Niveau 45 : Giga-Sangsue</li>
+            <li>Niveau 50 : Danse-Fleur</li>
+            <li>Niveau 53 : Tempête Florale</li>
+            <li>Niveau 58 : Poudrtoxik</li>
+          </ul>
+          <h3>Par CT/CS :</h3>
+          <ul>
+            <li>CT05 : Hurlement</li>
+            <li>CT06 : Toxik</li>
+            <li>CT09 : Choc Venin</li>
+            <li>CT10 : Puissance Cachée</li>
+            <li>CT11 : Zénith</li>
+            <li>CT16 : Mur Lumière</li>
+            <li>CT17 : Abri</li>
+            <li>CT20 : Rune Protect</li>
+            <li>CT22 : Lance-Soleil</li>
+            <li>CT27 : Retour</li>
+            <li>CT32 : Reflet</li>
+            <li>CT42 : Façade</li>
+            <li>CT44 : Repos</li>
+            <li>CT45 : Attraction</li>
+            <li>CT48 : Chant Canon</li>
+            <li>CT53 : Éco-Sphère</li>
+            <li>CT75 : Danse-Lames</li>
+            <li>CT86 : Noeud Herbe</li>
+            <li>CT87 : Ronflement</li>
+            <li>CT88 : Éboulement</li>
+            <li>CT90 : Clonage</li>
+            <li>CT92 : Distorsion</li>
+            <li>CT100 : Confidence</li>
+          </ul>
+          <h2>Talents</h2>
+          <ul>
+            <li>
+              Engrais : Augmente la puissance des capacités de type Plante du
+              Pokémon quand ses PV sont bas.
+            </li>
+            <li>
+              Chlorophylle (Talent Caché) : Augmente la Vitesse du Pokémon sous
+              le soleil.
+            </li>
+          </ul>
+          <h2>Faiblesses et Résistances</h2>
+          <h3>Faiblesses :</h3>
+          <ul>
+            <li>Feu (x2)</li>
+            <li>Glace (x2)</li>
+            <li>Vol (x2)</li>
+            <li>Psy (x2)</li>
+          </ul>
+          <h3>Résistances :</h3>
+          <ul>
+            <li>Eau (x0.5)</li>
+            <li>Électrik (x0.5)</li>
+            <li>Plante (x0.25)</li>
+            <li>Combat (x0.5)</li>
+            <li>Fée (x0.5)</li>
+          </ul>
+          <h2>Localisation</h2>
+          <ul>
+            <li>Rouge/Bleu : Starter</li>
+            <li>Jaune : Inaccessible</li>
+            <li>Or/Argent/Cristal : Route 1 (Argent uniquement via échange)</li>
+            <li>Rubis/Saphir/Emeraude : Inaccessible</li>
+            <li>Diamant/Perle/Platine : Inaccessible</li>
+            <li>Noir/Blanc : Jardin de Bulbizarre (Événement)</li>
+            <li>X/Y : Route 22 (Safari des Amis)</li>
+            <li>Épée/Bouclier : DLC : Isolarmure</li>
+          </ul>
+          <h2>Événements et Variantes</h2>
+          <h3>Événements Spéciaux :</h3>
+          <p>
+            Florizarre a été distribué dans plusieurs événements spéciaux au fil
+            des ans, souvent avec des capacités ou des movesets exclusifs.
+          </p>
+        </div>
+      </section>
+      <section class="fichePokemon" id="salamèche">
+        <div>
+          <img src="./assets/img/salameche.png" alt="Salamèche" />
+        </div>
+        <div>
+          <h2>Salamèche (#004)</h2>
+          <h2>Informations de Base</h2>
+          <ul>
+            <li>Nom : Salamèche</li>
+            <li>Numéro du Pokédex : #004</li>
+            <li>Type : Feu</li>
+            <li>
+              Description :
+              <ul>
+                <li>
+                  Pokédex Rouge/Bleu : Prend garde à la flamme de sa queue. Si
+                  elle s'éteint, le Pokémon meurt.
+                </li>
+                <li>
+                  Pokédex Épée : La flamme sur sa queue indique son état de
+                  santé et ses émotions. Elle vacille quand il est content et
+                  brûle avec intensité quand il est en colère.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Statistiques de Base</h2>
+          <ul>
+            <li>PV : 39</li>
+            <li>Attaque : 52</li>
+            <li>Défense : 43</li>
+            <li>Attaque Spéciale : 60</li>
+            <li>Défense Spéciale : 50</li>
+            <li>Vitesse : 65</li>
+          </ul>
+          <h2>Évolutions</h2>
+          <ul>
+            <li>Salamèche évolue en Reptincel au niveau 16.</li>
+            <li>Reptincel évolue en Dracaufeu au niveau 36.</li>
+          </ul>
+          <h2>Attaques</h2>
+          <h3>Par Niveau :</h3>
+          <ul>
+            <li>Niveau 1 : Griffe, Rugissement</li>
+            <li>Niveau 9 : Flammèche</li>
+            <li>Niveau 15 : Groz'Yeux</li>
+            <li>Niveau 22 : Tranche</li>
+            <li>Niveau 30 : Morsure</li>
+            <li>Niveau 38 : Lance-Flammes</li>
+            <li>Niveau 46 : Crocs Feu</li>
+            <li>Niveau 54 : Lame de Roc</li>
+            <li>Niveau 62 : Déflagration</li>
+          </ul>
+          <h3>Par CT/CS :</h3>
+          <ul>
+            <li>CT01 : Ultralaser</li>
+            <li>CT02 : Dracogriffe</li>
+            <li>CT06 : Toxik</li>
+            <li>CT10 : Puissance Cachée</li>
+            <li>CT11 : Zénith</li>
+            <li>CT17 : Abri</li>
+            <li>CT21 : Frustration</li>
+            <li>CT27 : Retour</li>
+            <li>CT31 : Casse-Brique</li>
+            <li>CT32 : Reflet</li>
+            <li>CT35 : Lance-Flammes</li>
+            <li>CT38 : Déflagration</li>
+            <li>CT42 : Façade</li>
+            <li>CT44 : Repos</li>
+            <li>CT50 : Surchauffe</li>
+            <li>CT61 : Feu Follet</li>
+            <li>CT75 : Danse-Lames</li>
+            <li>CT80 : Éboulement</li>
+            <li>CT82 : Draco-Météore</li>
+            <li>CT87 : Ronflement</li>
+            <li>CT90 : Clonage</li>
+            <li>CT93 : Coup d'Main</li>
+            <li>CT100 : Confidence</li>
+          </ul>
+          <h2>Talents</h2>
+          <ul>
+            <li>
+              Brasier : Augmente la puissance des capacités de type Feu du
+              Pokémon quand ses PV sont bas.
+            </li>
+            <li>
+              Force Soleil (Talent Caché) : Augmente l'Attaque Spéciale sous le
+              soleil mais réduit les PV.
+            </li>
+          </ul>
+          <h2>Faiblesses et Résistances</h2>
+          <h3>Faiblesses :</h3>
+          <ul>
+            <li>Eau (x2)</li>
+            <li>Sol (x2)</li>
+            <li>Roche (x2)</li>
+          </ul>
+          <h3>Résistances :</h3>
+          <ul>
+            <li>Feu (x0.5)</li>
+            <li>Plante (x0.5)</li>
+            <li>Glace (x0.5)</li>
+            <li>Insecte (x0.5)</li>
+            <li>Acier (x0.5)</li>
+            <li>Fée (x0.5)</li>
+          </ul>
+          <h2>Localisation</h2>
+          <ul>
+            <li>Rouge/Bleu : Starter</li>
+            <li>Jaune : Route 24</li>
+            <li>Or/Argent/Cristal : Inaccessible</li>
+            <li>Rubis/Saphir/Emeraude : Inaccessible</li>
+            <li>Diamant/Perle/Platine : Inaccessible</li>
+            <li>Noir/Blanc : Inaccessible</li>
+            <li>X/Y : Inaccessible</li>
+            <li>Épée/Bouclier : DLC : Isolarmure</li>
+          </ul>
+          <h2>Événements et Variantes</h2>
+          <h3>Événements Spéciaux :</h3>
+          <p>
+            Salamèche a été distribué dans plusieurs événements spéciaux au fil
+            des ans, souvent avec des capacités ou des movesets exclusifs.
+          </p>
+        </div>
+      </section>
+      <section class="fichePokemon" id="reptincel">
+        <div>
+          <img src="./assets/img/reptincel.png" alt="Reptincel" />
+        </div>
+        <div>
+          <h2>Reptincel (#005)</h2>
+          <h2>Informations de Base</h2>
+          <ul>
+            <li>Nom : Reptincel</li>
+            <li>Numéro du Pokédex : #005</li>
+            <li>Type : Feu</li>
+            <li>
+              Description :
+              <ul>
+                <li>
+                  Pokédex Rouge/Bleu : Il crache des flammes à des températures
+                  très élevées. Il ne cesse de chercher des adversaires
+                  puissants.
+                </li>
+                <li>
+                  Pokédex Épée : Lorsque Reptincel combat, la flamme de sa queue
+                  brûle plus intensément. Il est souvent vu en train de
+                  s'entraîner pour devenir plus fort.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Statistiques de Base</h2>
+          <ul>
+            <li>PV : 58</li>
+            <li>Attaque : 64</li>
+            <li>Défense : 58</li>
+            <li>Attaque Spéciale : 80</li>
+            <li>Défense Spéciale : 65</li>
+            <li>Vitesse : 80</li>
+          </ul>
+          <h2>Évolutions</h2>
+          <ul>
+            <li>Salamèche évolue en Reptincel au niveau 16.</li>
+            <li>Reptincel évolue en Dracaufeu au niveau 36.</li>
+          </ul>
+          <h2>Attaques</h2>
+          <h3>Par Niveau :</h3>
+          <ul>
+            <li>Niveau 1 : Griffe, Rugissement</li>
+            <li>Niveau 9 : Flammèche</li>
+            <li>Niveau 15 : Groz'Yeux</li>
+            <li>Niveau 24 : Tranche</li>
+            <li>Niveau 33 : Morsure</li>
+            <li>Niveau 42 : Lance-Flammes</li>
+            <li>Niveau 56 : Crocs Feu</li>
+            <li>Niveau 62 : Déflagration</li>
+          </ul>
+          <h3>Par CT/CS :</h3>
+          <ul>
+            <li>CT01 : Ultralaser</li>
+            <li>CT02 : Dracogriffe</li>
+            <li>CT06 : Toxik</li>
+            <li>CT10 : Puissance Cachée</li>
+            <li>CT11 : Zénith</li>
+            <li>CT17 : Abri</li>
+            <li>CT21 : Frustration</li>
+            <li>CT27 : Retour</li>
+            <li>CT31 : Casse-Brique</li>
+            <li>CT32 : Reflet</li>
+            <li>CT35 : Lance-Flammes</li>
+            <li>CT38 : Déflagration</li>
+            <li>CT42 : Façade</li>
+            <li>CT44 : Repos</li>
+            <li>CT50 : Surchauffe</li>
+            <li>CT61 : Feu Follet</li>
+            <li>CT75 : Danse-Lames</li>
+            <li>CT80 : Éboulement</li>
+            <li>CT82 : Draco-Météore</li>
+            <li>CT87 : Ronflement</li>
+            <li>CT90 : Clonage</li>
+            <li>CT93 : Coup d'Main</li>
+            <li>CT100 : Confidence</li>
+          </ul>
+          <h2>Talents</h2>
+          <ul>
+            <li>
+              Brasier : Augmente la puissance des capacités de type Feu du
+              Pokémon quand ses PV sont bas.
+            </li>
+            <li>
+              Force Soleil (Talent Caché) : Augmente l'Attaque Spéciale sous le
+              soleil mais réduit les PV.
+            </li>
+          </ul>
+          <h2>Faiblesses et Résistances</h2>
+          <h3>Faiblesses :</h3>
+          <ul>
+            <li>Eau (x2)</li>
+            <li>Sol (x2)</li>
+            <li>Roche (x2)</li>
+          </ul>
+          <h3>Résistances :</h3>
+          <ul>
+            <li>Feu (x0.5)</li>
+            <li>Plante (x0.5)</li>
+            <li>Glace (x0.5)</li>
+            <li>Insecte (x0.5)</li>
+            <li>Acier (x0.5)</li>
+            <li>Fée (x0.5)</li>
+          </ul>
+          <h2>Localisation</h2>
+          <ul>
+            <li>Rouge/Bleu : Évolution de Salamèche</li>
+            <li>Jaune : Inaccessible</li>
+            <li>Or/Argent/Cristal : Inaccessible</li>
+            <li>Rubis/Saphir/Emeraude : Inaccessible</li>
+            <li>Diamant/Perle/Platine : Inaccessible</li>
+            <li>Noir/Blanc : Inaccessible</li>
+            <li>X/Y : Inaccessible</li>
+            <li>Épée/Bouclier : DLC : Isolarmure</li>
+          </ul>
+          <h2>Événements et Variantes</h2>
+          <h3>Événements Spéciaux :</h3>
+          <p>
+            Reptincel a été distribué dans plusieurs événements spéciaux au fil
+            des ans, souvent avec des capacités ou des movesets exclusifs.
+          </p>
+        </div>
+      </section>
+
       <section class="fichePokemon" id="pikachu">
         <div>
           <img src="./assets/img/pikachu.png" alt="Pikachu" />
         </div>
         <div>
-          <h2>Pikachu</h2>
+          <h2>Pikachu (#025)</h2>
           <h2>Informations de Base</h2>
           <ul>
             <li>Nom : Pikachu</li>
