@@ -50,7 +50,6 @@ main {
       grid-template-columns: 1fr;
       height: auto;
       padding: 20px;
-      // text-align: center;
       overflow: initial;
     }
 
@@ -68,9 +67,6 @@ main {
       img {
         width: 50%;
         filter: drop-shadow(0 0 5px $blackShadow);
-
-        @media screen and (max-width: 1120px) {
-        }
       }
 
       &:first-child {
@@ -83,6 +79,7 @@ main {
         @media screen and (max-width: 1120px) {
           display: block;
           margin: 0 auto;
+          text-align: center;
         }
       }
 

@@ -226,6 +226,7 @@ main .fichePokemon div:first-child {
   main .fichePokemon div:first-child {
     display: block;
     margin: 0 auto;
+    text-align: center;
   }
 }
 main .fichePokemon div:last-child {
