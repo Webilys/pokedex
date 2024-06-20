@@ -50,7 +50,7 @@ main {
       grid-template-columns: 1fr;
       height: auto;
       padding: 20px;
-      text-align: center;
+      // text-align: center;
       overflow: initial;
     }
 
@@ -59,9 +59,18 @@ main {
       margin: 0 20px;
       overflow-y: scroll;
 
+      @media screen and (max-width: 1120px) {
+        padding: 20px;
+        overflow: initial;
+        margin: 0 auto;
+      }
+
       img {
         width: 50%;
         filter: drop-shadow(0 0 5px $blackShadow);
+
+        @media screen and (max-width: 1120px) {
+        }
       }
 
       &:first-child {
@@ -70,6 +79,11 @@ main {
         align-items: center;
         overflow: none;
         overflow-y: hidden;
+
+        @media screen and (max-width: 1120px) {
+          display: block;
+          margin: 0 auto;
+        }
       }
 
       &:last-child {

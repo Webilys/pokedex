@@ -21,6 +21,7 @@
 body {
   color: #000000;
   text-align: center;
+  font-size: 1rem;
 }
 
 h1,
@@ -188,7 +189,6 @@ main .fichePokemon {
     grid-template-columns: 1fr;
     height: auto;
     padding: 20px;
-    text-align: center;
     overflow: initial;
   }
 }
@@ -196,6 +196,13 @@ main .fichePokemon div {
   padding: 20px 0;
   margin: 0 20px;
   overflow-y: scroll;
+}
+@media screen and (max-width: 1120px) {
+  main .fichePokemon div {
+    padding: 20px;
+    overflow: initial;
+    margin: 0 auto;
+  }
 }
 main .fichePokemon div img {
   width: 50%;
@@ -214,6 +221,12 @@ main .fichePokemon div:first-child {
           align-items: center;
   overflow: none;
   overflow-y: hidden;
+}
+@media screen and (max-width: 1120px) {
+  main .fichePokemon div:first-child {
+    display: block;
+    margin: 0 auto;
+  }
 }
 main .fichePokemon div:last-child {
   padding: 20px;
