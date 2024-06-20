@@ -17,8 +17,10 @@ main {
     overflow-y: hidden;
 
     @media screen and (max-width: 1120px) {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: block;
+      height: auto;
+      text-align: center;
+      padding: 20px;
     }
 
     h2 {
@@ -46,6 +48,10 @@ main {
 
     @media screen and (max-width: 1120px) {
       grid-template-columns: 1fr;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+      overflow: initial;
     }
 
     div {

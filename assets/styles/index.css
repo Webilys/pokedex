@@ -157,8 +157,10 @@ main #sectionFalse {
 @media screen and (max-width: 1120px) {
   main #bienvenue,
   main #sectionFalse {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 20px;
   }
 }
 main #bienvenue h2,
@@ -184,6 +186,10 @@ main .fichePokemon {
 @media screen and (max-width: 1120px) {
   main .fichePokemon {
     grid-template-columns: 1fr;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    overflow: initial;
   }
 }
 main .fichePokemon div {
