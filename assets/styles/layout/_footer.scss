@@ -12,6 +12,10 @@ footer {
     align-items: center;
     gap: 20px;
 
+    @media screen and (max-width: 1120px) {
+      grid-template-columns: 1fr;
+    }
+
     p,
     a {
       font-size: 0.6rem;

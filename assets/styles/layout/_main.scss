@@ -16,6 +16,11 @@ main {
     border-radius: 20px;
     overflow-y: hidden;
 
+    @media screen and (max-width: 1120px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
     h2 {
       padding-bottom: 20px;
     }
@@ -38,6 +43,10 @@ main {
     box-shadow: 0 0 10px $black;
     border-radius: 20px;
     overflow-y: hidden;
+
+    @media screen and (max-width: 1120px) {
+      grid-template-columns: 1fr;
+    }
 
     div {
       padding: 20px 0;

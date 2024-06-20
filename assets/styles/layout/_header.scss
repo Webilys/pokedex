@@ -11,6 +11,12 @@ header {
     width: 80%;
     margin: 0 auto;
 
+    @media screen and (max-width: 1120px) {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+    }
+
     div {
       display: block;
       padding: 0;
@@ -25,6 +31,11 @@ header {
           box-shadow: 0 0 10px $blackShadow;
           text-align: center;
 
+          @media screen and (max-width: 1120px) {
+            margin: 10px 0;
+            width: 80%;
+            margin: 10px auto;
+          }
           &:active,
           &:focus {
             outline: none;

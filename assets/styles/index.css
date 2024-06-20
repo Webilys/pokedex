@@ -75,6 +75,13 @@ header div {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1120px) {
+  header div {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
 header div div {
   display: block;
   padding: 0;
@@ -91,6 +98,13 @@ header div div label input {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   text-align: center;
+}
+@media screen and (max-width: 1120px) {
+  header div div label input {
+    margin: 10px 0;
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 header div div label input:active, header div div label input:focus {
   outline: none;
@@ -140,6 +154,13 @@ main #sectionFalse {
   border-radius: 20px;
   overflow-y: hidden;
 }
+@media screen and (max-width: 1120px) {
+  main #bienvenue,
+  main #sectionFalse {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 main #bienvenue h2,
 main #sectionFalse h2 {
   padding-bottom: 20px;
@@ -159,6 +180,11 @@ main .fichePokemon {
           box-shadow: 0 0 10px #000000;
   border-radius: 20px;
   overflow-y: hidden;
+}
+@media screen and (max-width: 1120px) {
+  main .fichePokemon {
+    grid-template-columns: 1fr;
+  }
 }
 main .fichePokemon div {
   padding: 20px 0;
@@ -227,6 +253,11 @@ footer div {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+@media screen and (max-width: 1120px) {
+  footer div {
+    grid-template-columns: 1fr;
+  }
 }
 footer div p,
 footer div a {
