@@ -1,0 +1,53 @@
+.pokemon-list {
+  text-align: center;
+}
+
+.add-pokemon {
+  font-size: 1rem;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+  border: none;
+  text-transform: uppercase;
+  background: $color3;
+  padding: 5px 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 5px $black;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+#search-pokemon {
+  width: 300px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 40px;
+  border: 3px solid $color1;
+
+  input {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+    color: $color2;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+  button {
+    color: $white;
+    font-size: 1rem;
+    border: none;
+    background: none;
+  }
+}

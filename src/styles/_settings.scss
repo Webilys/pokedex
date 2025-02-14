@@ -1,0 +1,105 @@
+//fonts
+@font-face {
+  font-family: "pokemon";
+  src: url(../assets/fonts/Pokemon.ttf);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../assets/fonts/Poppins.ttf);
+}
+
+$font1: poppins, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+$font2: pokemon, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+$bg: #002966;
+$bg2: linear-gradient(to bottom, #345abd, #002966);
+$color1: #346abd;
+$color2: #ffcd00;
+$color3: #f40009;
+$color4: #fddc5a;
+$pokeball: linear-gradient(180deg, $color3 0%, $color3 25%, #fff 100%);
+$white: #fff;
+$placeholder: #838383;
+$black: #000;
+$text: #333;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+$roche: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  ),
+  radial-gradient(
+    at 50% 0%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+$plante: linear-gradient(to bottom, #d4fc79 0%, #96e6a1 100%);
+$combat: linear-gradient(to bottom, #f6d365 0%, #fda085 100%);
+$vol: linear-gradient(to bottom, #c2e9fb 0%, #a1c4fd 100%);
+$poison: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+$sol: linear-gradient(to bottom, #c79081 0%, #dfa579 100%);
+$normal: linear-gradient(to bottom, #e3eeff 0%, #cacaca 100%);
+$insecte: linear-gradient(to bottom, #3cba92 0%, #0ba360 100%);
+$psy: linear-gradient(to bottom, #874da2 0%, #c43a30 100%); // A changer
+$acier: linear-gradient(to bottom, #cbbacc 0%, #2580b3 100%);
+$feu: linear-gradient(to bottom, #f9d423 0%, #f83600 100%);
+$eau: linear-gradient(to bottom, #89f7fe 0%, #66a6ff 100%);
+$electrik: linear-gradient(to bottom, #ffd700 0%, #ffa500 100%);
+$spectre: linear-gradient(to bottom, #a445b2 0%, #ff0066 100%); // A foncer
+$glace: linear-gradient(to bottom, #68e0cf 0%, #209cff 100%);
+$dragon: linear-gradient(to bottom, #21d4fd 0%, #b721ff 100%);
+$tenebres: linear-gradient(to bottom, #323232 0%, #1c1c1c 100%);
+$fee: linear-gradient(to bottom, #ff758c 0%, #ff7eb3 100%);
+$inconnu: linear-gradient(to bottom, #b7f8db 0%, #50a7c2 100%);
+$stellaire: linear-gradient(
+  to top,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 50%,
+  rgba(252, 176, 69, 1) 100%
+);
+
+//general
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font1;
+}
+
+body {
+  width: 100%;
+  background: $bg;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,
+p {
+  color: $white;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+//keyframes
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

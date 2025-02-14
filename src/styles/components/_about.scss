@@ -1,0 +1,37 @@
+.about {
+  h1 {
+    color: $color2;
+
+    &:after {
+      content: "";
+      width: 5%;
+      display: block;
+      border: 1px solid $color2;
+      margin: 20px 0;
+    }
+  }
+  h2 {
+    color: $color2;
+    padding: 50px 0 20px;
+
+    &:after {
+      content: "";
+      width: 5%;
+      display: block;
+      border: 1px solid $color2;
+      margin: 20px 0;
+    }
+  }
+
+  p {
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  .footer {
+    padding-top: 50px;
+    p {
+      text-align: center;
+    }
+  }
+}

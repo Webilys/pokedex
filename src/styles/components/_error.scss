@@ -1,0 +1,9 @@
+.page-error {
+  text-align: center;
+  color: $white;
+
+  img {
+    filter: drop-shadow(0 0 5px $black);
+    margin: 30px auto;
+  }
+}

@@ -1,0 +1,149 @@
+.card {
+  list-style: none;
+  height: 100%;
+  width: 360px;
+  display: inline-block;
+  margin: 10px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  border-radius: 5px;
+  // margin: 10px;
+  box-shadow: 0 0 5px $blackShadow;
+  cursor: pointer;
+}
+
+.pokemon-wrap {
+  margin-left: auto;
+  border-radius: 5px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 40% 60%;
+  padding: 10px;
+  gap: 20px;
+  text-shadow: 0 0 5px $black;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px $blackShadow;
+
+  &:hover {
+    // background: $bg2 !important;
+    // box-shadow: 0 0 10px $white;
+    transform: scale(1.05);
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    filter: drop-shadow(0 0 2px $black);
+    padding: 10px;
+  }
+
+  .pokemon-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+    height: 100%;
+    color: $white;
+
+    .id-pokemon {
+      background: $color3;
+      border-radius: 40px;
+      text-align: center;
+      padding: 0 10px;
+      box-shadow: 0 0 5px $blackShadow;
+    }
+
+    .category-pokemon {
+      border: 2px solid $white;
+      border-radius: 40px;
+      padding: 0 20px;
+      box-shadow: 0 0 5px $blackShadow;
+      text-shadow: 0 0 5px $black;
+    }
+  }
+}
+
+.pokemon-wrap.normal {
+  background: $normal;
+}
+
+.pokemon-wrap.combat {
+  background: $combat;
+}
+
+.pokemon-wrap.vol {
+  background: $vol;
+}
+
+.pokemon-wrap.poison {
+  background: $poison;
+}
+
+.pokemon-wrap.sol {
+  background: $sol;
+}
+
+.pokemon-wrap.roche {
+  background: $roche;
+}
+
+.pokemon-wrap.insecte {
+  background: $insecte;
+}
+
+.pokemon-wrap.spectre {
+  background: $spectre;
+}
+
+.pokemon-wrap.acier {
+  background: $acier;
+}
+
+.pokemon-wrap.feu {
+  background: $feu;
+}
+
+.pokemon-wrap.eau {
+  background: $eau;
+}
+
+.pokemon-wrap.plante {
+  background: $plante;
+}
+
+.pokemon-wrap.electrik {
+  background: $electrik;
+}
+
+.pokemon-wrap.psy {
+  background: $psy;
+}
+
+.pokemon-wrap.glace {
+  background: $glace;
+}
+
+.pokemon-wrap.dragon {
+  background: $dragon;
+}
+
+.pokemon-wrap.tenebres {
+  background: $tenebres;
+}
+
+.pokemon-wrap.fee {
+  background: $fee;
+}
+
+.pokemon-wrap.inconnu {
+  background: $inconnu;
+}
+
+.pokemon-wrap.stellaire {
+  background: $stellaire;
+}
